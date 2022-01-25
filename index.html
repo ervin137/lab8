@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">   
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#icon').click(function(){
+          $('ul').toggleClass('show');
+        });
+      });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+      <nav>
+        <label class="logo">WebX</label>
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+        <label id="icon">
+          <i class="fas fa-bars"></i>
+        </label>
+      </nav>
+    </header>
+    <main>
+        <div class="container-1">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/center-img1.jpg" alt="center-img1" class="adaptive">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/center-img2.jpg" alt="center-img2" class="adaptive">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/center-img3.jpg" alt="center-img3" class="adaptive">
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination "></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
